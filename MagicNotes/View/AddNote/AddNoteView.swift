@@ -26,7 +26,7 @@ struct AddNoteView: View {
                     .font(.title)
                     .bold()
                     .multilineTextAlignment(.center)
-                .foregroundColor(.white)
+                    .foregroundColor(.white)
 
                 Spacer().frame(height: 110)
 

@@ -10,10 +10,6 @@ import SwiftUI
 struct TabBar: View {
     @State var selectedtab = "add"
     @StateObject var notes = Notes()
-
-    init(){
-        UITabBar.appearance().isHidden = true
-    }
     @State var xAxis: CGFloat = 0
     @Namespace var animation
 

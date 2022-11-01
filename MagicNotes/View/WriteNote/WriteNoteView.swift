@@ -9,8 +9,9 @@ import SwiftUI
 
 struct WriteNoteView: View {
 
-    @EnvironmentObject var notes: Notes
     @State public var placeholder = ""
+    @EnvironmentObject var notes: Notes
+    @Environment (\.dismiss) var dismiss
 
     var body: some View {
         ZStack {
@@ -30,30 +31,26 @@ struct WriteNoteView: View {
                     Section {
                         ZStack {
                             TextEditor(text: $placeholder)
-                                .frame(height: 400)
+                                .frame(height: 500)
                         }
                     }
                 }.background(.clear)
+                .scrollContentBackground(.hidden)
+                .position(x: 197, y: 370)
 
                 Button {
                     notes.addNote(content: placeholder)
+                    dismiss()
                     } label: {
                         Image(systemName: "checkmark.circle")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 80, height: 80)
                             .foregroundColor(Color.white)
                             .background(Color(red: 39/255, green: 11/255, blue: 46/255)).cornerRadius(50)
-                }
+                    }.position(x: 345, y: 170)
             }
         }
-    }
-}
-
-struct WriteNoteView_Previews: PreviewProvider {
-    static var previews: some View {
-        WriteNoteView()
-            .environmentObject(Notes())
     }
 }
 
@@ -68,5 +65,13 @@ struct TextEditorComponent: View {
                 .padding(.horizontal)
                 .cornerRadius(25)
         }
+    }
+}
+
+
+struct WriteNoteView_Previews: PreviewProvider {
+    static var previews: some View {
+        WriteNoteView()
+            .environmentObject(Notes())
     }
 }

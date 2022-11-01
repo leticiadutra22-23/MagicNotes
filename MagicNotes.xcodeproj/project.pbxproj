@@ -15,7 +15,6 @@
 		D9246683291005EE003A2060 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9246682291005EE003A2060 /* CustomShape.swift */; };
 		D92466852911385B003A2060 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92466842911385B003A2060 /* AddNoteView.swift */; };
 		D924668729113BBF003A2060 /* WriteNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924668629113BBF003A2060 /* WriteNoteView.swift */; };
-		D924668929113F32003A2060 /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924668829113F32003A2060 /* TextEditor.swift */; };
 		D924668C29114AE1003A2060 /* AllNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924668B29114AE1003A2060 /* AllNotesView.swift */; };
 		D924668E29114F9F003A2060 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924668D29114F9F003A2060 /* Notes.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +29,6 @@
 		D9246682291005EE003A2060 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 		D92466842911385B003A2060 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 		D924668629113BBF003A2060 /* WriteNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNoteView.swift; sourceTree = "<group>"; };
-		D924668829113F32003A2060 /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		D924668B29114AE1003A2060 /* AllNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesView.swift; sourceTree = "<group>"; };
 		D924668D29114F9F003A2060 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				D924668629113BBF003A2060 /* WriteNoteView.swift */,
-				D924668829113F32003A2060 /* TextEditor.swift */,
 			);
 			path = WriteNote;
 			sourceTree = "<group>";
@@ -199,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D924668729113BBF003A2060 /* WriteNoteView.swift in Sources */,
-				D924668929113F32003A2060 /* TextEditor.swift in Sources */,
 				D924668C29114AE1003A2060 /* AllNotesView.swift in Sources */,
 				D9246683291005EE003A2060 /* CustomShape.swift in Sources */,
 				D9246681290FF9D1003A2060 /* TabBar.swift in Sources */,

@@ -40,19 +40,25 @@ struct AllNotesView: View {
 
                 List {
                     ForEach(notes.notes) { note in
-                        VStack(alignment: .leading) {
-                            Text (note.dateStamp)
-                                .foregroundColor(Color(red: 39/255, green: 11/255, blue: 46/255))
-                            //                            .background(Color(red: 39/255, green: 11/255, blue: 46/255))
-                                .font(.headline)
-                            Text(note.content)
-                                .font(.body)
-                                .padding(.vertical)
-                        }
-                    }
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(.white)
+                                .frame(width: 360)
 
-                }.listStyle(.plain)
-                .listRowBackground(Color.clear)
+                            VStack(alignment: .leading) {
+                                Text (note.dateStamp)
+                                    .foregroundColor(Color(red: 39/255, green: 11/255, blue: 46/255))
+                                //                            .background(Color(red: 39/255, green: 11/255, blue: 46/255))
+                                    .font(.headline)
+                                Text(note.content)
+                                    .font(.body)
+                                    .padding(.vertical)
+                            }
+                        }
+                    }.listRowBackground(Color.clear)
+                }
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
                 .position(x: 195)
             }
         }
